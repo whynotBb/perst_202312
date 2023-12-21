@@ -21,10 +21,7 @@ function Toast({ msg, position }) {
     }
 `;
     useEffect(() => {
-        const timer = setTimeout(() => {
-            // You can add fade-out animation here if needed
-            // toastRef.current.style.animation = `${fadeOut} 0.5s ease-in-out forwards`;
-        }, 3000);
+        const timer = setTimeout(() => {}, 3000);
 
         return () => {
             clearTimeout(timer);
